@@ -1,2 +1,2 @@
 # Discordbot
-First time making a discord bot to fool around with JS
+First time making a discord bot to poractice JS
