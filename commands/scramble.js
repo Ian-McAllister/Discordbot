@@ -1,4 +1,4 @@
-const { User } = require("discord.js");
+
 
 
 module.exports = {
@@ -40,8 +40,7 @@ module.exports = {
             return message.channel.send(` Congrats you got it right!!!`);
         })
         .catch(() => {
-            message.channel.send(words[wordpicked]);
-            message.channel.send("Sorry you ran out of time");
+            message.channel.send(`Sorry you ran out of time. The word was: ${words[wordpicked]}`);
         })
 
     },
