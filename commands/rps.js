@@ -5,8 +5,7 @@ module.exports = {
         picks = ['rock','paper','scissors']
         
         const filter = m => m.author.id === message.author.id;
-        botPick = Math.floor( Math.random()* 2 );
-        
+        botPick = Math.floor(Math.random() * 3);
         await message.channel.send('please enter your choice.');
         message.channel.awaitMessages(filter, {
             max: 1,
@@ -17,7 +16,6 @@ module.exports = {
             
             const rpsPick = collected.first();
             correctInput = 0
-            message.channel.send(rpsPick);
             z = 2
             for(let i = 0; z > i ; i++ ){
                 if (rpsPick.content.toLowerCase() === picks[i]){
